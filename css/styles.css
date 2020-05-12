@@ -1,0 +1,37 @@
+body{
+  background-image: url('../img/backgrnd.jpg');
+  background-size: 50px 500px;
+  font-family: Arial;
+}
+
+.menu{
+  background-color: #ffffff;
+}
+
+a{
+  color: teal;
+  text-decoration: none ;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.menu ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li{
+  list-style: none;
+}
+
+.site-subtitle,
+.site-title{
+  color: darkslategrey;
+  text-align: center;
+}
+
+.site-subtitle{
+  font-style: italic;
+}
