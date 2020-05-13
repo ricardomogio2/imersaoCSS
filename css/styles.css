@@ -1,16 +1,54 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
   background-image: url('../img/backgrnd.jpg');
-  background-size: 50px 500px;
+  background-size: auto 100vh;
+  font-size: 12px;
   font-family: Arial;
+}
+
+@media(min-width: 400px){
+  body{
+    font-size: 14px;
+  }
+}
+
+@media(min-width: 600px){
+  body{
+    font-size: 16px;
+  }
+}
+
+header{
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu{
   background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100vw;
 }
 
 a{
   color: teal;
-  text-decoration: none ;
+  text-decoration: none;
+}
+
+.menu a{
+  display: block;
+  padding: 10px 20px;
+}
+
+.menu a:hover{
+  background-color: #d0d0d0;
 }
 
 a:hover{
@@ -34,4 +72,9 @@ a:hover{
 
 .site-subtitle{
   font-style: italic;
+}
+
+.img-portfolio{
+  height: 180px;
+  width: 180px;
 }
