@@ -1,45 +1,80 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="./css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Press+Start+2P&family=Source+Code+Pro&display=swap" rel="stylesheet"> 
+
+  <script src="https://kit.fontawesome.com/0c94165592.js" crossorigin="anonymous"></script>
   <title>Ricardo Mogio</title>
 </head>
 <body>
 
-  <header>
+  <header id="sobre">
     <nav class="menu">
       <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contato</a></li>        
-      <ul>
+        <li><a href="#sobre">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contato">Contato</a></li>        
+      </ul>
     </nav>
-    
+
     <div>
       <h1 class="site-title"> Ricardo Mogio</h1>
       <h2 class="site-subtitle">Jr Frontend Developer</h2>     
     </div>
   </header> 
 
-  <section>
+  <section class="portfolio" id="portfolio">
     <h2>Portfólio</h2>
-    <figure>
-      <img src="./img/backgrnd.jpg" class="img-portfolio" alt="alguma coisa">
-      <figcaption>Legenda</figcaption>
-    </figure>
+    <div class="grid">
+      <figure>
+        <img src="./img/backgrnd.jpg" class="img-portfolio" alt="alguma coisa">
+        <figcaption>Legenda</figcaption>
+      </figure>
+  
+      <figure>
+        <img src="./img/backgrnd.jpg" class="img-portfolio" alt="alguma coisa">
+        <figcaption>Legenda</figcaption>
+      </figure>
+  
+      <figure>
+        <img src="./img/backgrnd.jpg" class="img-portfolio" alt="alguma coisa">
+        <figcaption>Legenda</figcaption>
+      </figure>
 
-    <figure>
-      <img src="./img/backgrnd.jpg" class="img-portfolio" alt="alguma coisa">
-      <figcaption>Legenda</figcaption>
-    </figure>
+      <figure>
+        <img src="./img/backgrnd.jpg" class="img-portfolio" alt="alguma coisa">
+        <figcaption>Legenda</figcaption>
+      </figure>
 
-    <figure>
-      <img src="./img/backgrnd.jpg" class="img-portfolio" alt="alguma coisa">
-      <figcaption>Legenda</figcaption>
-    </figure>
-
+      <figure>
+        <img src="./img/backgrnd.jpg" class="img-portfolio" alt="alguma coisa">
+        <figcaption>Legenda</figcaption>
+      </figure>
+    </div>
   </section> 
+
+  <section class="contato" id="contato">
+    <h2>Contato</h2>
+    <div class="grid icons">
+
+      <a target="_blank" href="mailto:ricardo.mogio@gmail.com">
+        <i class="fas fa-envelope"></i>
+      </a>
+
+      <a target="_blank" href="https://github.com/ricardomogio2">
+        <i class="fab fa-github"></i>
+      </a>
+
+      <a target="_blank" href="https://linkedin.com/ricardo-mogio">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </section>
 </body>
 </html>

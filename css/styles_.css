@@ -1,0 +1,126 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  /*background-image: url('../img/backgrnd.jpg');*/
+  background-color: darkolivegreen;
+  background-size: auto 100vh;
+  font-size: 12px;
+  font-family: 'Source Code Pro', monospace;
+  height: 100vh;
+}
+
+@media(min-width: 400px){
+  body{
+    font-size: 14px;
+  }
+}
+
+@media(min-width: 600px){
+  body{
+    font-size: 18px;
+  }
+}
+
+header{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu{
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+}
+
+a{
+  color: teal;
+  text-decoration: none;
+}
+
+.menu a{
+  display: block;
+  padding: 10px 20px;
+}
+
+.menu a:hover{
+  background-color: #d0d0d0;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.menu ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li{
+  list-style: none;
+}
+
+.site-subtitle,
+.site-title{
+  color: darkslategrey;
+  text-align: center;
+}
+
+.site-title{
+  font-size: 4em;
+  font-family: 'Indie Flower', cursive;
+}
+
+.site-subtitle{
+  font-style: italic;
+  font-size: 1.5em;
+}
+
+.portfolio{
+  padding: 1.5em;
+  height: 100vh;
+}
+
+.portfolio h2{
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+
+.portfolio .grid{  
+  display: grid;
+  gap: 2em;
+}
+
+@media(min-width:560px){
+  .portfolio .grid{ 
+    grid-template-columns: repeat(2, 240px);
+    justify-content: space-evenly;
+  }
+}
+
+@media(min-width:860px){
+  .portfolio .grid{ 
+    align-content: center;
+    grid-template-columns: repeat(3, 240px);
+    justify-content: space-evenly;
+    height: calc(100vh - 4em - 48px);
+  }
+}
+
+.portfolio figure{
+  text-align: center;
+}
+
+.img-portfolio{
+  height: 180px;
+  object-fit: cover;
+  width: 240px;
+}
